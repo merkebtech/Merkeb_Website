@@ -1,15 +1,15 @@
 import PortfolioCard from "../components/portfolioCard";
-import W1 from "../assets/p_blog.jpg";
-import W2 from "../assets/p_gym.jpg";
-import w3 from "../assets/P_hotel.png";
-import w4 from "../assets/p_dress.png";
-import w5 from "../assets/p_org.png";
+import P_B from "../assets/P_B.jpg";
+import P_G from "../assets/P_G.jpg";
+import P_H from "../assets/P_H.png";
+import P_D from "../assets/P_D.png";
+import P_O from "../assets/P_O.png";
 
 function Portfolio() {
   const items = [
     {
       title: "Content Platform",
-      imageSrc: W1,
+      imageSrc: P_B,
       href: "",
       description:
         "A clean, content-focused website built for writers or organizations to publish articles, share insights, and engage readers through well-structured posts.",
@@ -17,31 +17,31 @@ function Portfolio() {
     },
     {
       title: "Gym managment system",
-      imageSrc: W2,
+      imageSrc: P_G,
       description:
         "A complete platform designed to streamline gym operations, from member registration and payments to class scheduling and performance tracking.",
       technologies: ["nextjs", "mysql", "node"],
     },
     {
       title: "Hotel managment website",
-      imageSrc: w3,
-      href: "https://kerawi-hotel.onrender.com/",
+      imageSrc: P_H,
+
       description:
         "A responsive booking system for a Lexurious hotels and resorts, featuring room listings, availability tracking, and secure online reservations.",
       technologies: ["python", "flask", "mysql", "bootstrap"],
     },
     {
       title: "Fashion E-Commerce Platform ",
-      imageSrc: w4,
-      href: "https://habesha-traditional-dress.vercel.app/",
+      imageSrc: P_D,
+
       description:
         "A modern, user-friendly online store built for habesha clothing brands to showcase collections, manage inventory, and offer seamless shopping experiences.",
       technologies: ["react", "tailwind", "node", "mongodb"],
     },
     {
       title: "Corporate Profile Website",
-      imageSrc: w5,
-      href: "https://www.segelconsult.com/",
+      imageSrc: P_O,
+
       description:
         "A professional web presence for organizations highlighting mission, services, and impact through clear structure and modern design.",
       technologies: ["react", "figma", "bootstrap"],
@@ -75,7 +75,6 @@ function Portfolio() {
               title={item.title}
               description={item.description}
               imageSrc={item.imageSrc}
-              href={item.href}
               technologies={item.technologies}
             />
           ))}
