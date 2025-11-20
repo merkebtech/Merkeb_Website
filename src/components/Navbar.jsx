@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/Logo_2.png";
 
@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <nav
-      style={{ fontFamily: " 'Inter',sans-serif" }}
+      style={{ fontFamily: "'Inter', sans-serif" }}
       className="w-full bg-gradient-to-br from-[#0a1a3b] via-[#10244f] to-[#1a1445] text-white shadow-md fixed top-0 left-0 right-0 z-50"
     >
       <div className="max-w-7xl mx-auto px-8 py-1">
@@ -31,12 +31,12 @@ export default function Navbar() {
               className="h-14 md:h-16 w-auto"
             />
             <div className="text-white font-semibold text-sm md:text-base leading-none">
-              <span className="text-2xl font-semibold block">Merkeb</span>
+              <span className="text-xl font-semibold block">Merkeb</span>
               <span className="text-sm block -mt-0.5">Technologies</span>
             </div>
           </div>
 
-          {/* Centered Navigation Items */}
+          {/* Navigation Links */}
           <ul className="flex space-x-8 items-center">
             <li>
               <button
@@ -73,7 +73,7 @@ export default function Navbar() {
             <li>
               <button
                 onClick={() => handleLinkClick("/portfolio")}
-                className="hover:text-blue-200 transition-colors duration-200 font-normal  text-lg"
+                className="hover:text-blue-200 transition-colors duration-200 font-normal text-lg"
               >
                 Portfolio
               </button>
@@ -81,7 +81,7 @@ export default function Navbar() {
             <li>
               <button
                 onClick={() => handleLinkClick("/price")}
-                className="hover:text-blue-200 transition-colors duration-200 font-normal  text-lg"
+                className="hover:text-blue-200 transition-colors duration-200 font-normal text-lg"
               >
                 Pricing
               </button>
@@ -96,7 +96,6 @@ export default function Navbar() {
             </li>
           </ul>
 
-          {/* Spacer for centering */}
           <div className="w-32"></div>
         </div>
 
@@ -111,10 +110,11 @@ export default function Navbar() {
               alt="Merkeb Technologies Logo"
               className="h-12 w-auto"
             />
-            <div className="text-white font-semibold text-lg">
-              <span></span>
-              <br />
-              Technologies
+
+            {/* ✅ Mobile Title Fixed */}
+            <div className="text-white font-semibold leading-none">
+              <span className="text-lg font-semibold block">Merkeb</span>
+              <span className="text-sm block -mt-1">Technologies</span>
             </div>
           </div>
 
